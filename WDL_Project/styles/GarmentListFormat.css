@@ -1,41 +1,82 @@
-.header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../res/images/themes/mainTheme.jpg");
-    background-repeat: repeat-x;
-    padding: 20px 30px 20px 30px;
-    height: 20%;
-    border-radius: 7px;
-  }
-  .headerText {
-    flex-grow: 8;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 20px;
-    background: linear-gradient(to right, #f7efe6, #f2dac2, #e8c6a5, #d4ac85, #b08a64, #d4ac85, #e8c6a5, #f2dac2, #f7efe6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    width: 90%;
-    height: 100%;
-    padding-top: 5px;
-    text-align: center;
-    font-size: 30px;
-  }
-  #backIcon, #faqIcon {
-    flex-grow: 1;
-    width: 40px;
-    height: 40px;
-  }
-  #backIcon:hover, #faqIcon:hover {
-    cursor: pointer;
-  }
-  #backIcon{
-    top: 30px;
-    left: 40px;
-  }
-  #faqIcon {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-  }
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-row-1, .main-row-2, .main-row-3, .main-row-4, .main-row-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 30px 20px 0 20px;
+  width: 700px;
+  height: 180px;
+  box-shadow: 1px 1px 2px 2px #5e5e5e;
+  border-radius: 12px;
+}
+#garmentImg {
+  width: 150px;
+  height: 150px;
+  margin: 10px 25px 10px 10px;
+  border-radius: 10px;
+}
+#Title {
+  font-size: 40px;
+  font-weight: 800;
+  opacity: 0.72;
+}
+#Price {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+#Price strong{
+  font-weight: 350;
+  opacity: 0.9;
+  color: #5e5e5e;
+  font-size: 20px;
+  margin: 10px 0 10px 10px;
+}
+input {
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -webkit-appearance: textfield;
+}
+input[type=button] {
+  width: 20px;
+  height: 28px;
+  font-size: 15px;
+  font-weight: 450;
+  text-align: center;
+  cursor: pointer;
+}
+#LB {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#RB {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.col-3-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.col-3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-2 {
+  width: 300px;
+  margin-right: 10px;
+}
