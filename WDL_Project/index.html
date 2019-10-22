@@ -15,11 +15,11 @@
       <img id="faqIcon" src="./res/icons/faq.svg" alt="Menu" />
     </div>
     <div class="HomePage">
-      <div class="MenSection" onclick="MenSect()">
+      <div class="MenSection" onclick="MenSection()">
         <p>Men's</p>
         <img id="Mens" src="./res/images/themes/Mens.jpg" alt="Mens">
       </div>
-      <div class="WomenSection" onclick="WomenSect()">
+      <div class="WomenSection" onclick="WomenSection()">
          <p>Women's</p>
         <img id="Womens" src="./res/images/themes/Womens.jpg" alt="Womens">
       </div> 
@@ -31,11 +31,11 @@
           Profile
         </div>
         <hr>
-        <div class="men">
+        <div onclick="MenSection()" class="men">
           Men
         </div>
         <hr>
-        <div class="women">
+        <div onclick="WomenSection()" class="women">
           Women
         </div>
         <hr>
@@ -44,7 +44,7 @@
         </div>
         <hr>
         <div class="menuFooter">
-          <img id="signOut" src="./res/icons/signOut.svg" alt="SignOut">
+          <img id="signOut" onclick="SignOut()" src="./res/icons/signOut.svg" alt="SignOut">
         </div>
       </div>
     <script type="text/javascript" src="./scripts/index.js"></script>

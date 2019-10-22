@@ -7,25 +7,44 @@
   </head>
   <body>
     <div class="header">
-      <img id='backIcon' src="./res/icons/back.svg" alt="Menu" />
+      <img id='backIcon' onclick="Back()" src="./res/icons/back.svg" alt="Menu" />
       <div class="headerText">
         Glabrous
       </div>
       <img id="faqIcon" src="./res/icons/faq.svg" alt="Menu" />
     </div>
     <div class="menSection">
-      <div class="Casuals">
+      <div onclick="Casuals()" class="Casuals">
         <p>Casuals</p>
         <img id="casuals" src="./res/images/mens-casuals.jpg" alt="Casuals">
       </div>
-      <div class="Formals">
+      <div onclick="Formals()" class="Formals">
          <p>Formals</p>
         <img id="formals" src="./res/images/mens-formals.jpg" alt="Formals">
       </div>
-      <div class="Occasion">
+      <div onclick="Occasion()" class="Occasion">
         <p>Occasion</p>
         <img id="occasion" src="./res/images/mens-occasion.jpg" alt="Occasion">
       </div>
     </div>
+    <script>
+      var r = window.location.href.split("/MenSection.html");
+      function Back(){
+        r[0]+="/index.html";
+        window.location.replace(r[0]);
+      }
+      function Casuals(){
+        r[0]+="/MensCasuals.html";
+        window.location.replace(r[0]);
+      }
+      function Formals(){
+        r[0]+="/MensFormals.html";
+        window.location.replace(r[0]);
+      }
+      function Casuals(){
+        r[0]+="/MensOccasion.html";
+        window.location.replace(r[0]);
+      }
+    </script>
   </body>
 </html>
