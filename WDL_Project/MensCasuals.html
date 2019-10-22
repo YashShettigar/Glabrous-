@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html onload="Render()" lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="./styles/MenSection.css" type="text/css">
     <link rel="stylesheet" href="./styles/GarmentListFormat.css" type="text/css">
@@ -14,82 +14,8 @@
       </div>
       <img id="faqIcon" src="./res/icons/faq.svg" alt="Menu" />
     </div>
-    <div class="main">
-            <div class="main-row-1">
-                <div class="col-1">
-                    <img id="garmentImg" src="./res/images/mens-black-t-shirt.jpg" alt="Garment Image">
-                </div>
-                <div class="col-2">
-                    <div id="Title">Black t-shirt</div>
-                    <div id="subtitle">A simple black t-shirt can be really classy sometimes!</div>
-                </div>
-                <div class="col-3">
-                    <div id="Price"><strong>Price</strong><br />$12</div>
-                    <div class="col-3-row">
-                        <input onclick="this.parentNode.querySelector('input[type=number]').stepDown()" type="button" value="-" id="LB" /><input type="number" min="0" max="10" value="" defaultValue="0"/><input onclick="this.parentNode.querySelector('input[type=number]').stepUp()" type="button" value="+" id="RB" />
-                    </div>
-                </div>
-            </div>
-            <div class="main-row-2">
-                <div class="col-1">
-                    <img id="garmentImg" src="./res/images/mens-jean-jacket.jpg" alt="Garment Image">
-                </div>
-                <div class="col-2">
-                    <div id="Title">Jean Jacket</div>
-                    <div>Perfectly suits over any t-shirt without bragging! Can be used as shirt too!</div>
-                </div>
-                <div class="col-3">
-                    <div id="Price"><strong>Price</strong><br />$12</div>
-                    <div class="col-3-row">
-                        <input onclick="this.parentNode.querySelector('input[type=number]').stepDown()" type="button" value="-" id="LB" /><input type="number" min="0" max="10" value="" defaultValue="0"/><input onclick="this.parentNode.querySelector('input[type=number]').stepUp()" type="button" value="+" id="RB" />
-                    </div>
-                </div>
-            </div>
-            <div class="main-row-3">
-                <div class="col-1">
-                    <img id="garmentImg" src="" alt="Garment Image">
-                </div>
-                <div class="col-2">
-                    <div id="Title">Jean Jacket</div>
-                    <div>subtitle</div>
-                </div>
-                <div class="col-3">
-                    <div id="Price"><strong>Price</strong><br />$12</div>
-                    <div class="col-3-row">
-                        <input onclick="this.parentNode.querySelector('input[type=number]').stepDown()" type="button" value="-" id="LB" /><input type="number" min="0" max="10" value="" defaultValue="0"/><input onclick="this.parentNode.querySelector('input[type=number]').stepUp()" type="button" value="+" id="RB" />
-                    </div>
-                </div>
-            </div>
-            <div class="main-row-4">
-                <div class="col-1">
-                    <img id="garmentImg" src="" alt="Garment Image">
-                </div>
-                <div class="col-2">
-                    <div id="Title">Jean Jacket</div>
-                    <div>subtitle</div>
-                </div>
-                <div class="col-3">
-                    <div id="Price"><strong>Price</strong><br />$12</div>
-                    <div class="col-3-row">
-                        <input onclick="this.parentNode.querySelector('input[type=number]').stepDown()" type="button" value="-" id="LB" /><input type="number" min="0" max="10" value="" defaultValue="0"/><input onclick="this.parentNode.querySelector('input[type=number]').stepUp()" type="button" value="+" id="RB" />
-                    </div>
-                </div>
-            </div>
-            <div class="main-row-5">
-                <div class="col-1">
-                    <img id="garmentImg" src="" alt="Garment Image">
-                </div>
-                <div class="col-2">
-                    <div id="Title">Jean Jacket</div>
-                    <div>subtitle</div>
-                </div>
-                <div class="col-3">
-                    <div id="Price"><strong>Price</strong><br />$12</div>
-                    <div class="col-3-row">
-                        <input onclick="this.parentNode.querySelector('input[type=number]').stepDown()" type="button" value="-" id="LB" /><input type="number" min="0" max="10" value="" defaultValue="0"/><input onclick="this.parentNode.querySelector('input[type=number]').stepUp()" type="button" value="+" id="RB" />
-                    </div>
-                </div>
-            </div>
-        </div> 
+    <div id="tabContainer" class="main">
+     </div> 
+	 <script src="./scripts/MenSection.js"></script>
   </body>
 </html>
