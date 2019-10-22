@@ -18,6 +18,7 @@
   height: 150px;
   margin: 10px 25px 10px 10px;
   border-radius: 10px;
+  border: 1px solid #cfcfcf;
 }
 #Title {
   font-size: 40px;
