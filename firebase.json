@@ -8,6 +8,62 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
+    ],
+  "rewrites": [ {
+    "source": "/",
+    "destination": "/index.html"
+	  },{
+"source": "/404",
+"destination": "/404.html"
+}
+,{
+"source": "/index",
+"destination": "/index.html"
+}
+,{
+"source": "/intro",
+"destination": "/intro.html"
+}
+,{
+"source": "/Login",
+"destination": "/Login.html"
+}
+,{
+"source": "/MensCasuals",
+"destination": "/MensCasuals.html"
+}
+,{
+"source": "/MenSection",
+"destination": "/MenSection.html"
+}
+,{
+"source": "/MensFormals",
+"destination": "/MensFormals.html"
+}
+,{
+"source": "/MensOccasion",
+"destination": "/MensOccasion.html"
+}
+,{
+"source": "/Signup",
+"destination": "/Signup.html"
+}
+,{
+"source": "/WomensCasuals",
+"destination": "/WomensCasuals.html"
+}
+,{
+"source": "/WomenSection",
+"destination": "/WomenSection.html"
+}
+,{
+"source": "/WomensFormals",
+"destination": "/WomensFormals.html"
+}
+,{
+"source": "/WomensOccasion",
+"destination": "/WomensOccasion.html"
+}
+	]
   }
 }
