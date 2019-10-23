@@ -56,7 +56,7 @@ if(loc.match(obj[0].url)){
 }
 
 
-// rendering product tabs to the pages
+// rendering tabs of section's product to the pages
 var p = document.getElementById('tabContainer');
 for(var i =1;i<4; i++){
 	var j=1;

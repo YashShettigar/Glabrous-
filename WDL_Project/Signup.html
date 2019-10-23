@@ -20,6 +20,7 @@
         <label for="Landmark">Landmark :</label>
         <label for="Username">Username :</label>
         <label for="Password">Password :</label>
+        <label for="Photo">Profile Pic :</label>
       </div>
       <div class="col-2">
         <input type="text" name="Name" value="" placeholder="Enter your name" required />
@@ -29,8 +30,17 @@
         <input type="text" name="Landmark" value="" placeholder="Enter landmark nearest to you" required />
         <input type="text" name="User" value="" placeholder="Enter your username" required />
         <input id="Pass" type="password" name="Pass" value="" placeholder="Enter your password" required />
+        <input id="Pic" type="file"  name="Photo" value="" />
       </div>
     </div>
     <button type="submit" name="Login">Register</button>
+    <button type="button" onclick="Back()" name="Back">Go back</button>
+    <script>
+      function Back(){
+      var r = window.location.href.split("/Signup.html");
+      r[0]+="/index.html";
+      window.location.replace(r[0]);
+      }
+    </script>
   </body>
 </html>

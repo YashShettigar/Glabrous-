@@ -11,6 +11,7 @@ function menuSlideIn() {
 }
 
 var r = window.location.href.split("/index.html");
+
 function MenSection(){
   r[0]+="/MenSection.html";
   window.location.replace(r[0]);
@@ -22,5 +23,10 @@ function WomenSection(){
 
 function SignOut(){
   r[0]+="/Login.html";
+  window.location.replace(r[0]);
+}
+
+About = () => {
+  r[0]+="/About.html";
   window.location.replace(r[0]);
 }

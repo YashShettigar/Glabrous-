@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./styles/Signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Quicksand&display=swap" rel="stylesheet">
+    <title>Glabrous</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./res/icons/user-shield.svg" alt="user-shield">
+      About Us
+      <hr>
+    </div>
+    <div class="Content">
+      Hi, there!
+      This is a demo project based on the topic "Online Shopping". The name of the project's site is 'Glabrous' which tends to encourage public for online shopping for their clothes. We will be trying to introduce online trial of clothes in future which will include some application of AI/ML. For now, we have a basic website that checks for validation of user including cart processing page. 
+    </div>
+    <button type="submit" onclick="Back()" name="Home">GO to home</button>
+    <script>
+        var r = window.location.href.split("/About.html");
+        function Back(){
+        r[0]+="/index.html";
+        window.location.replace(r[0]);
+    }
+    </script>
+  </body>
+</html>

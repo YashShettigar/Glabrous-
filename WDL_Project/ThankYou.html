@@ -5,29 +5,32 @@
     </head>
     <body>
         <div id="container">
-            <div class="loader"></div>  
-            <div class="text">
-                Thank you for being with us!
-            </div>     
-            <br />
-            <div class="subtext">
-                We will be redirecting you to the home page shortly...
+                <div class="context">
+                <div class="text">
+                    Thank you for being with us!
+                </div>     
+                <br />
+                <div class="subtext">
+                    We will be redirecting you to the home page shortly...
+                </div>
             </div>
-        </div> 
+            <center>
+                <div class="loader"></div>
+            </center>
+            </div> 
         <script>
             setTimeout(() => {
                 var r = window.location.href.split("/ThankYou.html");
                 r[0]+="/index.html";
                 window.location.replace(r[0]);
-            }, 3500);
+            }, 3200);
         </script>
     </body>
     <style>
         html{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
         }
         .text{
             font-size: 28px;
@@ -36,15 +39,16 @@
         .subtext{
             font-size: 15px;
             font-family: 'Roboto Condensed', sans-serif;
+            margin-bottom: 17px;
         }
         .loader {
             border: 16px solid #f3f3f3;
             border-radius: 50%;
             border-top: 16px solid #217AB5;
             border-bottom: 16px solid #217AB5;
-            width: 120px;
-            height: 120px;
-            animation: spin 2s linear infinite;
+            width: 68px;
+            height: 68px;
+            animation: spin 1.5s linear infinite;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }

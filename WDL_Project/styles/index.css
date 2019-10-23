@@ -1,3 +1,8 @@
+html{
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+}
 .header {
   display: flex;
   flex-direction: row;
