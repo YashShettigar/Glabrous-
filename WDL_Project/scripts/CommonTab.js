@@ -35,21 +35,21 @@ if(loc.match(obj[0].url)){
 }else if(loc.match(obj[3].url)){
     document.getElementById('backIcon').addEventListener('click',() => {
         var r = window.location.href.split("/WomensCasuals.html");
-        r[0]+="/MenSection.html";
+        r[0]+="/WomenSection.html";
         window.location.replace(r[0]);
     });
     re_url=obj[3];
 }else if(loc.match(obj[4].url)){
     document.getElementById('backIcon').addEventListener('click',() => {
         var r = window.location.href.split("/WomensOccasion.html");
-        r[0]+="/MenSection.html";
+        r[0]+="/WomenSection.html";
         window.location.replace(r[0]);
     });
     re_url=obj[4];
 }else if(loc.match(obj[5].url)){
     document.getElementById('backIcon').addEventListener('click',() => {
         var r = window.location.href.split("/WomensFormals.html");
-        r[0]+="/MenSection.html";
+        r[0]+="/WomenSection.html";
         window.location.replace(r[0]);
     });
     re_url=obj[5];
@@ -75,5 +75,23 @@ for(var i =1;i<4; i++){
                     </div>\
                 </div>\
             </div>'
-	p.innerHTML = p.innerHTML + tabs;
+    p.innerHTML = p.innerHTML + tabs;
+    
+}
+var proceed = '<div class="buttonContainer"><input type="button" name="Payment" id="Pay" value="Proceed to pay >>" onclick="ThankYou()"/></div>'
+p.innerHTML+=proceed;
+
+
+//rendering ThankYou Page
+function ThankYou(){
+    var r = window.location.href.split('/Mens');
+    var s =window.location.href.split('/Womens');
+    if(r.length > s.length){
+        r[0]+="/ThankYou.html";
+        window.location.replace(r[0]);
+    }else if(r.length < s.length){
+        s[0]+="/ThankYou.html";
+        window.location.replace(s[0]);
+    }
+    
 }

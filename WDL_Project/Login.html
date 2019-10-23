@@ -22,6 +22,13 @@
         <a href="">Forgot password?</a>
       </div>
     </div>
-    <button type="submit" name="Login">Sign In</button>
+    <button type="submit" onclick="login()" name="Login">Sign In</button>
+    <script>
+        login = () => {
+          var r = window.location.href.split('/Login.html');
+          r[0]+="/index.html";
+          window.location.replace(r[0]);
+        }
+    </script>
   </body>
 </html>

@@ -86,3 +86,21 @@ input[type=button] {
   width: 300px;
   margin-right: 10px;
 }
+#Pay{
+  font-size: 16px;
+  color: #fff;
+  background-color: #217ab5;
+  box-shadow: 1px 1px 1px 2px #e6e6e6;
+  border-radius: 4px;
+  padding: 5px 5px 5px 5px;
+  margin: 22px 0 0 40%;
+  border: 0;
+  width: 140px;
+  height: 30px;
+  font-family: 'Playfair Display', serif;
+}
+#Pay:hover{
+  cursor: pointer;
+  padding: 6px 6px 6px 6px;
+  opacity: 0.92;
+}
