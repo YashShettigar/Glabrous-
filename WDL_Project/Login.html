@@ -6,6 +6,7 @@
     <title>Glabrous/Login</title>
   </head>
   <body>
+    <form action="./scripts/PasswordValidation.php" method="POST">
     <div class="header">
       <img src="./res/icons/user-shield.svg" alt="user-shield">
       Login
@@ -22,13 +23,15 @@
         <a href="">Forgot password?</a>
       </div>
     </div>
-    <button type="submit" onclick="login()" name="Login">Sign In</button>
-    <script>
-        login = () => {
-          var r = window.location.href.split('/Login.html');
-          r[0]+="/index.html";
-          window.location.replace(r[0]);
-        }
-    </script>
+    <button type="submit" name="button" value="Login">Login</button>
+  </form>
+  <button type="submit" name="Sign up" onclick="Signup()" value="">Sign Up</button>
   </body>
+  <script>
+    function Signup(){
+      var r = window.location.href.split('/Login.html');
+      r[0]+="/Signup.html";
+      window.location.replace(r[0]);
+    }    
+  </script>
 </html>
